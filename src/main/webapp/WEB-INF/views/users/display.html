@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/users/display}" th:object="${buy}">
+    <label for="userId">Enter id user: </label>
+    <input type="text" th:field="*{userId}" id="userId"/>
+    <div style="color: red" th:if="${#fields.hasErrors('userId')}" th:errors="*{userId}"> userId error</div>
+    <br>
+    <input type="submit" value="Display!"/>
+</form>
+</body>
+</html>

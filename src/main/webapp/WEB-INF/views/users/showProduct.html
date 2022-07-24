@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Products of user</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/user/showProduct}" th:object="${listProducts}">
+    <div th:each="listProduct : ${listProducts}">
+        <p th:text="${listProduct}">prod</p>
+    </div>
+</form>
+</body>
+</html>
