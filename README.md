@@ -1,11 +1,11 @@
 # StartJavaProject
 Create a marketplace application with the help of Java language
 
-● System from the start has 3 products that can be sold. Each product contains:
+Each product contains:
 1. Id
 2. Name
 3. Price
-● System from the start has 3 users that can buy products. Each user has:
+Each user has:
 1. Id
 2. First name
 3. Last name
